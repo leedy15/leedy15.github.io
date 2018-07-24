@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="New Folder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="brainchip.jpg" />
+    <None Remove="CSharplogo.png" />
+    <None Remove="css3logo.png" />
+    <None Remove="TweenLite.min.js" />
+    <None Remove="css\header.css" />
+    <None Remove="css\portpage.css" />
+    <None Remove="css\styles.css" />
+    <None Remove="img\brainchip.jpg" />
+    <None Remove="img\TTA.jpg" />
+    <None Remove="img\github.png" />
+    <None Remove="img\html5css3.png" />
+    <None Remove="img\html5logo.png" />
+    <None Remove="img\javascriptlogo.png" />
+    <None Remove="img\linkedinpng.png" />
+    <None Remove="JS\EasePack.min.js" />
+    <None Remove="JS\Script1.js" />
+    <None Remove="JS\TweenLite.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\Privacy.cshtml" />
+    <Content Remove="wwwroot\css\site.css" />
+    <Content Remove="wwwroot\css\site.min.css" />
+    <Content Remove="wwwroot\css\header.css" />
+    <Content Remove="wwwroot\css\portpage.css" />
+    <Content Remove="wwwroot\css\styles.css" />
+    <Content Remove="wwwroot\images\banner1.svg" />
+    <Content Remove="wwwroot\js\site.js" />
+    <Content Remove="wwwroot\js\site.min.js" />
+    <Content Remove="wwwroot\img\CSharplogo.png" />
+    <Content Remove="wwwroot\img\FreeCodeCampCover.png" />
+    <Content Remove="wwwroot\img\TTA.jpg" />
+    <Content Remove="wwwroot\img\brainchip.jpg" />
+    <Content Remove="wwwroot\img\css3logo.png" />
+    <Content Remove="wwwroot\img\db.png" />
+    <Content Remove="wwwroot\img\github.png" />
+    <Content Remove="wwwroot\img\html5css3.png" />
+    <Content Remove="wwwroot\img\html5logo.png" />
+    <Content Remove="wwwroot\img\javascriptlogo.png" />
+    <Content Remove="wwwroot\img\linkedinpng.png" />
+    <Content Remove="wwwroot\JS\EasePack.min.js" />
+    <Content Remove="wwwroot\JS\Script1.js" />
+    <Content Remove="wwwroot\JS\TweenLite.min.js" />
+    <Content Remove="Views\Shared\_CookieConsentPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\css\header.css" />
+    <None Include="wwwroot\css\styles.css" />
+    <None Include="wwwroot\img\CSharplogo.png" />
+    <None Include="wwwroot\img\FreeCodeCampCover.png" />
+    <None Include="wwwroot\img\TTA.jpg" />
+    <None Include="wwwroot\img\brainchip.jpg" />
+    <None Include="wwwroot\img\css3logo.png" />
+    <None Include="wwwroot\img\db.png" />
+    <None Include="wwwroot\img\github.png" />
+    <None Include="wwwroot\img\html5css3.png" />
+    <None Include="wwwroot\img\html5logo.png" />
+    <None Include="wwwroot\img\javascriptlogo.png" />
+    <None Include="wwwroot\img\linkedinpng.png" />
+    <None Include="wwwroot\JS\EasePack.min.js" />
+    <None Include="wwwroot\JS\Script1.js" />
+    <None Include="wwwroot\JS\TweenLite.min.js" />
+  </ItemGroup>
+</Project>
