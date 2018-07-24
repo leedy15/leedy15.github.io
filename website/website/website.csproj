@@ -29,6 +29,18 @@
     <None Remove="JS\EasePack.min.js" />
     <None Remove="JS\Script1.js" />
     <None Remove="JS\TweenLite.min.js" />
+    <None Remove="EasePack.min.js" />
+    <None Remove="FreeCodeCampCover.png" />
+    <None Remove="db.png" />
+    <None Remove="github.png" />
+    <None Remove="header.css" />
+    <None Remove="TTA.jpg" />
+    <None Remove="styles.css" />
+    <None Remove="html5css3.png" />
+    <None Remove="html5logo.png" />
+    <None Remove="javascriptlogo.png" />
+    <None Remove="Script1.js" />
+    <None Remove="portpage.css" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Home\Privacy.cshtml" />
@@ -55,6 +67,11 @@
     <Content Remove="wwwroot\JS\Script1.js" />
     <Content Remove="wwwroot\JS\TweenLite.min.js" />
     <Content Remove="Views\Shared\_CookieConsentPartial.cshtml" />
+    <Content Remove="wwwroot\js\EasePack.min.js" />
+    <Content Remove="wwwroot\js\Script1.js" />
+    <Content Remove="wwwroot\js\TweenLite.min.js" />
+    <Content Remove="wwwroot\images\banner2.svg" />
+    <Content Remove="wwwroot\images\banner3.svg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\css\header.css" />

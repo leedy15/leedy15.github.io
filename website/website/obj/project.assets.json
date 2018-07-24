@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/leedy15/Projects/website/website/website.csproj",
+      "projectUniqueName": "/Users/leedy15/Documents/GitHub/leedy15.github.io/website/website/website.csproj",
       "projectName": "website",
-      "projectPath": "/Users/leedy15/Projects/website/website/website.csproj",
+      "projectPath": "/Users/leedy15/Documents/GitHub/leedy15.github.io/website/website/website.csproj",
       "packagesPath": "/Users/leedy15/.nuget/packages/",
-      "outputPath": "/Users/leedy15/Projects/website/website/obj",
+      "outputPath": "/Users/leedy15/Documents/GitHub/leedy15.github.io/website/website/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
