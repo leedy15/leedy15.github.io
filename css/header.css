@@ -42,12 +42,14 @@ header {
         font-family: 'Reem Kufi', sans-serif;
         font-size: 3.75em;
         font-weight: 600;
+        text-shadow: 8px 8px rgba(0,0,0,0.4);
     }
 
     header > .tagline {
         font-size: 1.5rem;
         margin: 1.5rem 0;
         font-weight: 100;
+        text-shadow: 8px 8px rgba(0,0,0,0.4);
     }
 
 
@@ -56,6 +58,7 @@ header {
     font-size: 3em;
     padding: 10px;
     color: #FAFAFA;
+    text-shadow: 8px 8px rgba(0,0,0,0.4);
 }
 
     .icons-social a svg path {
@@ -70,7 +73,7 @@ header {
     height: 4rem;
     margin: .5rem 1rem .5rem 0;
     border-radius: 50%;
-    transition: 250ms
+    transition: 250ms;
 }
 
     .fab:hover {
