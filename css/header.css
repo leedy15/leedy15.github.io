@@ -54,16 +54,21 @@ header {
 
 
 /* Icons */
-.icons-social i {
-    font-size: 3em;
-    padding: 10px;
-    color: #FAFAFA;
-    text-shadow: 8px 8px rgba(0,0,0,0.4);
+
+.icons-social li {
+    display:inline-block;
 }
 
-    .icons-social a svg path {
-        fill: #4B5658;
+    .icons-social i {
+        font-size: 3em;
+        padding: 10px;
+        color: #FAFAFA;
+        text-shadow: 8px 8px rgba(0,0,0,0.4);
     }
+
+        .icons-social a svg path {
+            fill: #4B5658;
+        }
 
 /* Icon Hover */
 
@@ -134,6 +139,7 @@ header {
 /* /Icon */
 
 footer {
+    margin-bottom: 20px;
     text-shadow: 8px 8px rgba(0,0,0,0.4);
 }
 

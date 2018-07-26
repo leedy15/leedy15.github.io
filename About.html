@@ -18,6 +18,19 @@
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: false });
+        if (sr.IsSupported()) { document.documentElement.classList.add('sr'); }
+    </script>
+    <style>
+        .sr {
+            visibility: hidden;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -40,7 +53,34 @@
     </nav>
     <!-- /navigation -->
     <div id="node-background">
-        <canvas id="moving-nodes" height="4000"></canvas>
+        <canvas id="moving-nodes"></canvas>
+    </div>
+
+    <div id="spacesabout"></div>
+    <!-- skills -->
+    <main>
+        <div id="about" class="intro">About Me</div>
+        <div class="card-group">
+            <div id="cardbottom" class="card">
+                <div class="image">
+                    <img class="card-img-top" src="img/Dylan.png" alt="Dylan">
+                </div>
+                <div class="details">
+                    <div class="center">
+                        <h1>Hello, I'm Dylan</h1>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="scroll-to-next">
+        <a type="button" href="#spaceskills" class="arrow bounce">
+            <div class="scroll-text">Click Me</div>
+            <i class="fas fa-angle-down fa-2x"></i>
+        </a>
     </div>
 
     <div id="spaceskills"></div>
@@ -48,7 +88,7 @@
     <main>
         <div id="skills" class="intro">Skills</div>
         <div class="card-group">
-            <div class="card">
+            <div id="cardleft" class="card">
                 <div class="image">
                     <img class="card-img-top" src="img/html5css3.png" alt="HTML5">
                 </div>
@@ -59,18 +99,18 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div id="cardbottom" class="card">
                 <div class="image">
                     <img class="card-img-top" src="img/javascriptlogo.png" alt="JavaScript" width="125" height="150">
                 </div>
                 <div class="details">
                     <div class="center">
                         <h1>JavaScript</h1>
-                        <p ></p>
+                        <p></p>
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div id="cardright" class="card">
                 <div class="image">
                     <img class="card-img-top" src="img/CSharplogo.png" alt="CSharp">
                 </div>
@@ -83,7 +123,7 @@
             </div>
         </div>
         <div class="card-group">
-            <div class="card">
+            <div id="cardleft" class="card">
                 <div class="image">
                     <img class="card-img-top" src="img/db.png" alt="Databases">
                 </div>
@@ -94,13 +134,13 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div id="cardright" class="card">
                 <div class="image">
                     <img class="card-img-top" src="img/CSharplogo.png" alt="CSharp">
                 </div>
                 <div class="details">
                     <div class="center">
-                        <h1>C#</span></h1>
+                        <h1>C#</h1>
                         <p></p>
                     </div>
                 </div>
@@ -108,20 +148,30 @@
         </div>
         <!-- /skills -->
     </main>
+
+    <div class="scroll-to-next">
+        <a type="button" href="#spacestudies" class="arrow bounce">
+            <div class="scroll-text">Click Me</div>
+            <i class="fas fa-angle-down fa-2x"></i>
+        </a>
+    </div>
+
+
     <!-- Experience -->
     <!-- /experience -->
+
     <div id="spacestudies"></div>
     <!-- School -->
     <main>
         <div id="studies" class="intro">Study Programs</div>
         <div class="card-group">
-            <div class="card">
+            <div id="cardleft" class="card">
                 <div class="image">
                     <img class="card-img-top" src="img/TTA.jpg" alt="TTA">
                 </div>
-                <div class="details">
-                    <h1>The Tech Academy</h1>
-                    <ul class="list-unstyled">
+                <div class="card-body details">
+                    <h1 class="card-text">The Tech Academy</h1>
+                    <ul class="card-text list-unstyled">
                         <li>September 2017 - January 2018</li>
                         <li>HTML/CSS</li>
                         <li>Database & SQL</li>
@@ -130,7 +180,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="card">
+            <div id="cardright" class="card">
                 <div class="image">
                     <img class="card-img-top" src="img/FreeCodeCampCover.png" alt="FFC">
                 </div>
@@ -163,6 +213,8 @@
     <script src="JS/TweenLite.min.js "></script>
     <script src="JS/EasePack.min.js "></script>
     <script src="JS/BackgroundDots2.js "></script>
+    <!--Scroll Reveal-->
+    <script src="JS/AboutScrollReveal.js "></script>
 
 </body>
 </html>

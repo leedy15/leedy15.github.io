@@ -20,7 +20,17 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
 
-
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: true });
+        if (sr.IsSupported()) { document.documentElement.classList.add('sr'); }
+    </script>
+    <style>
+        .sr {
+            visibility:hidden;
+        }
+    </style>
 </head>
 <body>
     <!-- page content -->
@@ -51,14 +61,14 @@
         <div class="intro">Hello, I'm Dylan!</div>
         <div class="tagline">Full-Stack Dev | .Net | JavaScript | Gamer | CoyFilly0</div>
         <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-        <div class="icons-social">
-            <a target="_blank" href="https://github.com/leedy15"><i class="fab fa-github"></i></a>
-            <a target="_blank" href="https://twitter.com/CoyFilly0"><i class="fab fa-twitter"></i></a>
-            <a target="_blank" href="https://facebook.com/CoyFilly0"><i class="fab fa-facebook"></i></a>
-            <a target="_blank" href="https://instagram.com/leedy15"><i class="fab fa-instagram"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/leedy15"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://www.freecodecamp.org/coyfilly0"><i class="fab fa-free-code-camp"></i></a>
-        </div>
+        <ul class="icons-social">
+            <li><div id="git"><a target="_blank" href="https://github.com/leedy15"><i class="fab fa-github"></i></a></div></li>
+            <li><div id="twit"><a target="_blank" href="https://twitter.com/CoyFilly0"><i class="fab fa-twitter"></i></a></div></li>
+            <li><div id="face"><a target="_blank" href="https://facebook.com/CoyFilly0"><i class="fab fa-facebook"></i></a></div></li>
+            <li><div id="gram"><a target="_blank" href="https://instagram.com/leedy15"><i class="fab fa-instagram"></i></a></div></li>
+            <li><div id="link"><a target="_blank" href="https://www.linkedin.com/in/leedy15"><i class="fab fa-linkedin"></i></a></div></li>
+            <li><div id="camp"><a target="_blank" href="https://www.freecodecamp.org/coyfilly0"><i class="fab fa-free-code-camp"></i></a></div></li>
+        </ul>
     </header>
 
     <footer>
@@ -73,32 +83,13 @@
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--BackgroundDots-->
     <script src="JS/TweenLite.min.js "></script>
     <script src="JS/EasePack.min.js "></script>
     <script src="JS/BackgroundDots1.js "></script>
-    <script>
-        $(document).ready(function () {
-            $("a").on('click', function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
+    <!--Scroll Reveal-->
+    <script src="JS/IndexScrollReveal.js "></script>
 
-        $(document).ready(function () {
-            $('.dropdown').hover(
-                function () {
-                    $(this).children('.dropdown-menu').slideToggle(200);
-                },
-            );
-        });
-    </script>
 </body>
 </html>
 

@@ -14,7 +14,7 @@
 
     function initHeader() {
         width = window.innerWidth - (window.innerWidth * .02);
-        height =(window.innerHeight + 1600);
+        height =(window.innerHeight + 2100);
         target = { x: width / 2, y: height / 2 };
 
         largeHeader = document.getElementById('node-background');
@@ -25,7 +25,7 @@
         canvas.height = height;
         ctx = canvas.getContext('2d');
         compressionfactorw = width / 250;
-        compressionfactorh = height / 267800;
+        compressionfactorh = height / 200;
         // create points
         points = [];
         for (var x = 0; x < width; x = x + width / (5 * compressionfactorw)) {

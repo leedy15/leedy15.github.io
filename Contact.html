@@ -18,6 +18,19 @@
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
+
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset: true });
+        if (sr.IsSupported()) { document.documentElement.classList.add('sr'); }
+    </script>
+    <style>
+        .sr {
+            visibility: hidden;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -55,14 +68,14 @@
             <div class="dropdown">
                 <div class="tagline"> Social |</div>
                 <div class="dropdown-content dropdown-menu-center">
-                    <div class="icons-social">
-                        <a target="_blank" href="https://github.com/leedy15"><i class="fab fa-github"></i></a>
-                        <a target="_blank" href="https://twitter.com/CoyFilly0"><i class="fab fa-twitter"></i></a>
-                        <a target="_blank" href="https://facebook.com/CoyFilly0"><i class="fab fa-facebook"></i></a>
-                        <a target="_blank" href="https://instagram.com/leedy15"><i class="fab fa-instagram"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/leedy15"><i class="fab fa-linkedin"></i></a>
-                        <a target="_blank" href="https://www.freecodecamp.org/coyfilly0"><i class="fab fa-free-code-camp"></i></a>
-                    </div>
+                    <ul class="icons-social">
+                        <li><div id="git"><a target="_blank" href="https://github.com/leedy15"><i class="fab fa-github"></i></a></div></li>
+                        <li><div id="twit"><a target="_blank" href="https://twitter.com/CoyFilly0"><i class="fab fa-twitter"></i></a></div></li>
+                        <li><div id="face"><a target="_blank" href="https://facebook.com/CoyFilly0"><i class="fab fa-facebook"></i></a></div></li>
+                        <li><div id="gram"><a target="_blank" href="https://instagram.com/leedy15"><i class="fab fa-instagram"></i></a></div></li>
+                        <li><div id="link"><a target="_blank" href="https://www.linkedin.com/in/leedy15"><i class="fab fa-linkedin"></i></a></div></li>
+                        <li><div id="camp"><a target="_blank" href="https://www.freecodecamp.org/coyfilly0"><i class="fab fa-free-code-camp"></i></a></div></li>
+                    </ul>
                 </div>
             </div>
             <div class="dropdown">
@@ -90,7 +103,8 @@
     <script src="JS/TweenLite.min.js "></script>
     <script src="JS/EasePack.min.js "></script>
     <script src="JS/BackgroundDots1.js "></script>
-
+        <!--Scroll Reveal-->
+    <script src="JS/IndexScrollReveal.js "></script>
 
 </body>
 </html>
