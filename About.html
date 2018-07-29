@@ -34,7 +34,23 @@
 </head>
 
 <body style="overflow-x: hidden">
-
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <!-- Instert something cool to click on to do something -->
+        <div class="container-fluid menu">
+            <div class="navbar-header">
+                <a class="navbar-brand">add something here</a>
+            </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="About.html">About</a>
+                </li>
+                <li classs="nav-item">
+                    <a class="nav-link menu-item" href="Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div id="node-background">
         <canvas id="moving-nodes"></canvas>
     </div>
@@ -202,24 +218,22 @@
     <!--Scroll Reveal-->
     <script src="JS/AboutScrollReveal.js "></script>
 
-    <script>
-        $(window).scroll(function() {
+    <script>$(window).scroll(function() {
             var height = $(window).scrollTop();
             if (height > 100) {
                 $('#back2Top').fadeIn();
             } else {
                 $('#back2Top').fadeOut();
             }
-        });
-        $(document).ready(function() {
-                    $("#back2Top").click(function(event) {
-                        event.preventDefault();
-                        $("html, body").animate({ scrollTop: 0 }, "slow");
-                        return false;
-                    });
+});
+$(document).ready(function() {
+            $("#back2Top").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
 
-        });
-</script>
+});</script>
 
 </body>
 </html>
