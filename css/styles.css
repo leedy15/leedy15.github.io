@@ -38,7 +38,27 @@ nav {
     color: #FAFAFA;
 }
 
-main {
+.about {
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;*/
+    justify-content: center;
+    padding: 0 30px 150px;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    /*min-height: 100vh;*/
+    justify-content: center;
+    padding: 0 30px 100px;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.studies {
     display: flex;
     flex-direction: column;
     /*min-height: 100vh;*/
@@ -254,8 +274,13 @@ canvas {
     transform: translate(-50%, 0) !important;
 }
 
+/* skip to next section button */
+
 .scroll-to-next{
     text-align:center;
+    margin-bottom: 150px;
+    color: #FAFAFA;
+    background-color: transparent;
 }
     .fa-angel-down {
         color:#FAFAFA;
@@ -319,3 +344,31 @@ canvas {
         transform: translateY(-15px);
     }
 }
+
+/* back to top button */
+#back2Top {
+    width: 105px;
+    z-index: 999;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    text-shadow: 8px 8px rgba(0,0,0,0.4);
+    border-radius: 50%;
+}
+
+    #back2Top:hover {
+        background-color: transparent;
+        color: #FAFAFA;
+        box-shadow: 0 0 24px 0 #FAFAFA;
+        font-size: 70px;
+    }

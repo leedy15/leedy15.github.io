@@ -14,7 +14,7 @@
 
     function initHeader() {
         width = window.innerWidth - (window.innerWidth * .02);
-        height =(window.innerHeight + 2100);
+        height =(window.innerHeight + 2150);
         target = { x: width / 2, y: height / 2 };
 
         largeHeader = document.getElementById('node-background');
