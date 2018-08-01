@@ -311,6 +311,7 @@ ul#menu {
     color: #FAFAFA;
     position: relative;
     text-align:center;
+    z-index: 1;
 }
 
     ul#menu > li {
