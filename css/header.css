@@ -9,11 +9,15 @@
     header {
         display: flex;
         flex-direction: column;
-        min-height: 70vh !important;
+        min-height: 72vh !important;
         justify-content: center; 
         padding: 0 30px 40px !important;
         text-align: center;
         color: #FAFAFA;
+    }
+
+    .icons-social i {
+        padding: 7px !important;
     }
 
 }
@@ -69,6 +73,9 @@ header {
 
 
 /* Icons */
+ul.icons-social {
+    padding:0px;
+}
 
 .icons-social li {
     display:inline-block;

@@ -1,6 +1,21 @@
-﻿@media screen and (max-width: 600px) {
+﻿@media (max-width: 600px) {
     html {
         font-size: 14px;
+        overflow-x:hidden;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        min-height: 72vh !important;
+        justify-content: center;
+        padding: 0 30px 240px !important;
+        text-align: center;
+        color: #FAFAFA;
+    }
+
+    .card {
+        margin: 0px 10px 80px 30px !important;
     }
     .card-img-top {
         width: 100%;
@@ -9,6 +24,15 @@
         margin-bottom: 30px;
         object-fit: scale-down;
         overflow: hidden;
+    }
+
+    .submenu {
+        white-space:normal !important;
+        display: block !important;
+    }
+
+    ul#menu > li {
+        display: block !important;
     }
 }
 
@@ -77,6 +101,30 @@
 
     .menu-item {
         color: #FAFAFA;
+    }
+
+section {
+    display: flex;
+    flex-direction: column;
+    min-height: 87vh;
+    justify-content: center;
+    padding: 0 30px 150px;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+    section > .intro {
+        font-family: 'Reem Kufi', sans-serif;
+        font-size: 3.75em;
+        font-weight: 600;
+        text-shadow: 8px 8px rgba(0,0,0,0.4);
+    }
+
+    section > .tagline {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        font-weight: 100 !important;
+        text-shadow: 8px 8px rgba(0,0,0,0.4);
     }
 
     .about {
@@ -304,7 +352,8 @@ input {
 
     /*show the second levele menu of the selected voice*/
     input:checked ~ ul.submenu {
-        max-height: 300px;
+        max-height: 220px;
+        overflow-y:auto;
         transition: max-height 0.5s ease-in;
     }
 
@@ -314,7 +363,6 @@ ul.submenu {
     padding: 0;
     overflow: hidden;
     list-style-type: none;
-    box-shadow: 0 0 1px rgba(0,0,0,.3);
     transition: max-height 0.5s ease-out;
     position: absolute;
     min-width: 100%;
@@ -324,13 +372,12 @@ ul.submenu {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     white-space: nowrap;
+
 }
 
     ul.submenu li a {
         padding: 12px;
-        color: #ddd;
         text-decoration: none;
-        box-shadow: 0 -1px rgba(0,0,0,.5) inset;
         transition: background .3s;
         white-space: nowrap;
         display: table-cell !important;
@@ -342,23 +389,21 @@ ul.submenu {
         padding: 12px 16px;
     }
 
-.submenu .fab {
-    margin: 1rem 1rem 1rem 0;
-}
+    .submenu .fab {
+        margin: 1rem 1rem 1rem 0;
+    }
 
-.submenu .fa-github:hover {
-    margin: 1rem 1rem 1rem 20px;
-}
+    .submenu .fa-github:hover {
+        margin: 1rem 1rem 1rem 20px;
+    }
 
-.submenu .fa-free-code-camp:hover {
-    margin: 1rem 1.5rem 1rem 0;
-}
+    .submenu .fa-free-code-camp:hover {
+        margin: 1rem 1.5rem 1rem 0;
+    }
 
-
-
-
-
-
+    .submenu .icon-social {
+        width: 50px;
+    }
 
     /* skip to next section button */
 
@@ -435,6 +480,7 @@ ul.submenu {
     /* back to top button */
     #back2Top {
         width: 105px;
+        display: none;
         z-index: 999;
         cursor: pointer;
         -moz-transform: rotate(270deg);
