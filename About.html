@@ -3,7 +3,7 @@
 <head>
     <title>Dylan Lee: About</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=.6, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
@@ -216,22 +216,26 @@
     <!--Scroll Reveal-->
     <script src="JS/AboutScrollReveal.js "></script>
 
-    <script>$(window).scroll(function() {
-            var height = $(window).scrollTop();
-            if (height > 100) {
-                $('#back2Top').fadeIn();
-            } else {
-                $('#back2Top').fadeOut();
-            }
-});
-$(document).ready(function() {
-            $("#back2Top").click(function(event) {
-                event.preventDefault();
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-                return false;
-            });
-
-});</script>
+    <script>
+        $(window).onLoad(function() {
+            $('#back2Top').hide();
+        });
+        $(window).scroll(function() {
+                var height = $(window).scrollTop();
+                if (height > 500) {
+                    $('#back2Top').fadeIn();
+                } else {
+                    $('#back2Top').fadeOut();
+                }
+        });
+        $(document).ready(function() {
+                $("#back2Top").click(function(event) {
+                    event.preventDefault();
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                    return false;
+                });
+        });
+</script>
 
 </body>
 </html>
