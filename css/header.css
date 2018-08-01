@@ -1,7 +1,7 @@
 ﻿html {
     font-family: 'Roboto', sans-serif;
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     html {
         font-size: 14px;
     }
@@ -63,7 +63,7 @@ header {
     header > .tagline {
         font-size: 1.5rem;
         margin: 1.5rem 0;
-        font-weight: 100;
+        font-weight: 100 !important;
         text-shadow: 8px 8px rgba(0,0,0,0.4);
     }
 
