@@ -1,5 +1,4 @@
-
-(function () {
+﻿(function () {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true,
         compressionfactorh, compressionfactorw, mainb;
@@ -15,7 +14,7 @@
 
     function initHeader() {
         width = window.innerWidth - (window.innerWidth * .02);
-        height =(window.innerHeight + 2200);
+        height =(window.innerHeight + 2800);
         target = { x: width / 2, y: height / 2 };
 
         largeHeader = document.getElementById('node-background');
@@ -184,4 +183,3 @@
     }
 
 })();
-
