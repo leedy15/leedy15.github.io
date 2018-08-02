@@ -34,6 +34,19 @@
     ul#menu > li {
         display: block !important;
     }
+
+    iframe {
+        height: 150px;
+    }
+
+    .email {
+        padding-left: 10px;
+    }
+
+    .phone {
+        padding-left: 30px;
+    }
+
 }
 
     @media (min-width: 768px) {
@@ -350,25 +363,19 @@ label {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
-        margin: 10px;
+        margin: -30px 0 30px;
         font-weight: 500;
         transition: 500ms;
     }
 
-        input:checked ~ label:after {
-            border-top: 0 solid rgba(250,250,250,.5);
-            border-bottom: 8px solid rgba(250,250,250,.5);
-        }
-
-/*hide the inputs*/
-input {
-    display: none
-}
+    /*hide the inputs*/
+    input {
+        display: none
+    }
 
     /*show the second levele menu of the selected voice*/
     input:checked ~ ul.submenu {
-        max-height: 220px;
-        overflow-y:auto;
+        max-height: 330px;
         transition: max-height 0.5s ease-in;
     }
 
@@ -387,6 +394,7 @@ ul.submenu {
     box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.4);
     z-index: 1;
     white-space: nowrap;
+    margin: -45px 30px;
 }
 
     ul.submenu li a {
@@ -419,14 +427,15 @@ ul.submenu {
         width: 50px;
     }
 
-    /* skip to next section button */
 
-    .scroll-to-next {
-        text-align: center;
-        margin-bottom: 150px;
-        color: #FAFAFA;
-        background-color: transparent;
-    }
+/* skip to next section button */
+
+.scroll-to-next {
+    text-align: center;
+    margin-bottom: 150px;
+    color: #FAFAFA;
+    background-color: transparent;
+}
 
     .fa-angel-down {
         color: #FAFAFA;
