@@ -1,4 +1,5 @@
-﻿(function () {
+﻿
+(function () {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true,
         compressionfactorh, compressionfactorw, mainb;
@@ -14,7 +15,7 @@
 
     function initHeader() {
         width = window.innerWidth - (window.innerWidth * .02);
-        height =(window.innerHeight + 2800);
+        height = (window.innerHeight + 6400);
         target = { x: width / 2, y: height / 2 };
 
         largeHeader = document.getElementById('node-background');
@@ -25,10 +26,10 @@
         canvas.height = height;
         ctx = canvas.getContext('2d');
         compressionfactorw = width / 250;
-        compressionfactorh = height / 200;
+        compressionfactorh = height / 250;
         // create points
         points = [];
-        for (var x = 0; x < width; x = x + width / (5 * compressionfactorw)) {
+        for (var x = 0; x < width; x = x + width / (6 * compressionfactorw)) {
             for (var y = 0; y < height; y = y + height / (30)) {
                 var px = x + Math.random() * width / 20;
                 var py = y + Math.random() * height / 8;
@@ -37,7 +38,7 @@
             }
         }
 
-        // for each point find the 5 closest points
+        // for each point find the 6 closest points
         for (var i = 0; i < points.length; i++) {
             var closest = [];
             var p1 = points[i];
@@ -114,7 +115,7 @@
             ctx.clearRect(0, 0, width, height + 500);
             for (var i in points) {
                 // detect points in range
-                if (Math.abs(getDistance(target, points[i])) < 3000000) {
+                if (Math.abs(getDistance(target, points[i])) < 99999999999999) {
                     points[i].active = 0.2;
                     points[i].circle.active = 10.6;
                 } else if (Math.abs(getDistance(target, points[i])) < 20) {
@@ -183,3 +184,4 @@
     }
 
 })();
+
