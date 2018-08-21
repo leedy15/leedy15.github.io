@@ -99,14 +99,11 @@
     max-width: 100%;
     height: auto;
 }*/
-
+    
     nav {
         background-color: #485564;
     }
 
-    .navbar-nav {
-        flex-direction: row !important;
-    }
 
     .nav-item {
         padding-left: 10px;
@@ -294,7 +291,7 @@ section {
     }
 
     #spaceprojects {
-        padding: 30px;
+        padding: 40px !important;
     }
 
     #about {

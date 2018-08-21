@@ -1,4 +1,5 @@
 ﻿
+
 (function () {
 
     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true,
@@ -15,7 +16,7 @@
 
     function initHeader() {
         width = window.innerWidth - (window.innerWidth * .02);
-        height = (window.innerHeight + 3600);
+        height = (window.innerHeight + 2700);
         target = { x: width / 2, y: height / 2 };
 
         largeHeader = document.getElementById('node-background');

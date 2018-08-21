@@ -29,20 +29,24 @@
 
 <body>
     <!-- navigation -->
-    <nav class="navbar navbar-expand-sm sticky-top">
-        <!-- Instert something cool to click on to do something -->
-        <div class="container-fluid menu">
-            <div class="navbar-header">
-                <a class="navbar-brand menu-item" href="index.html">Dylan Lee</a>
-            </div>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Dylan Lee</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link menu-item" href="About.html">About</a>
+                    <a class="nav-link menu-item active" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-item" href="Projects.html">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link menu-item" href="Contact.html">Contact</a>
                 </li>
             </ul>
+
         </div>
     </nav>
     <div id="node-background">
@@ -71,7 +75,7 @@
                             </p>
                             <p>
                                 Since starting my career as a software developer I have taught elementary school students basic programming logic in an after school program,
-                                worked as an intern at The Tech Academy after graduation and moved up into an instructor position and have done contracting work for Prosper IT Consulting. 
+                                worked as an intern at The Tech Academy after graduation and moved up into an instructor position and have done contracting work for Prosper IT Consulting.
                                 I'm currently looking for my next big place in this industry to make an impact.
                             </p>
                             <p>
@@ -110,8 +114,8 @@
                         <h2>Bootstrap</h2>
                         <div class="center">
                             <p>
-                                HTML defines the structure and content of webpages. CSS styles the content. 
-                                Twitters Bootstrap helps provide websites with advanced functionality and responive design. 
+                                HTML defines the structure and content of webpages. CSS styles the content.
+                                Twitters Bootstrap helps provide websites with advanced functionality and responive design.
                                 This site of mine is mobile ready and fully functional!
                             </p>
                         </div>
@@ -128,7 +132,7 @@
                         <h2>jQuery / React / Node / NPM</h2>
                         <div class="center">
                             <p>
-                                JavaScript makes the web move, making webpages dynamic and bringing them to life. 
+                                JavaScript makes the web move, making webpages dynamic and bringing them to life.
                                 The background is completely made of JavaScript as well as all the scrolling effects!
                             </p>
                         </div>
@@ -207,187 +211,6 @@
     </main>
 
     <div class="scroll-to-next  col-xs-12">
-        <a type="button" href="#spaceprojects" class="arrow bounce">
-            <div class="scroll-text">Click Me</div>
-            <i class="fas fa-angle-down fa-2x"></i>
-        </a>
-    </div>
-
-    <div class="col-xs-12" id="spaceprojects"></div>
-    <!-- Projects -->
-    <main class="projects">
-        <div id="projects" class="intro">Projects</div>
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div id="cardright" class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/YummyPizza.png" alt="YummyPizza">
-                    </div>
-                    <div class="details">
-                        <h1>Yummy Pizza!</h1>
-                        <div class="center">
-                            <p>
-                                A nice outline for a pizza ordering service.
-                                Using pure JavaScript for all the logic behind, this site as a smooth and simplistic design ready for any business to take note of.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://github.com/leedy15/Order-Pizza" class="btn btn-secondary">See Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div id="cardbottom" class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/Library.png" alt="LibrarySearch">
-                    </div>
-                    <div class="details">
-                        <h1>Library Search</h1>
-                        <div class="center">
-                            <p>
-                                A sample library database with stored proceedures ready to find basic information about book, people and branches built using SQL.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://github.com/leedy15/Books-Database" class="btn btn-secondary">See Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div id="cardleft" class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/ExcelData.png" alt="ExcelData">
-                    </div>
-                    <div class="details">
-                        <h1>ExcelData</h1>
-                        <div class="center">
-                            <p>
-                                A program built with C# to get and display excel files in a web browser.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://github.com/leedy15/ExcelData" class="btn btn-secondary">See Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div id="cardright" class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/darts.png" alt="Darts">
-                    </div>
-                    <div class="details">
-                        <h1>Darts</h1>
-                        <div class="center">
-                            <p>
-                                A simple game of Darts built using C#. Everytime you press 'OK' a game will be played and the first to 300 is the Winner.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://github.com/leedy15/Simple_Darts" class="btn btn-secondary">See Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div id=cardbottom class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/War.png" alt="War">
-                    </div>
-                    <div class="details">
-                        <h1>War</h1>
-                        <div class="center">
-                            <p>
-                                A favorable card game 'War' where two players face off by dealing a deck of cards and each takes a turn placing a card down and the highest card wins.
-                                In the event of a draw both players will deal out 4 cards and the last of all 4 cards determines the winner. This program plays the whole game and was built using C#.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://github.com/leedy15/GameOfWar" class="btn btn-secondary">See Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div id="cardleft" class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/Casino.png" alt="Slots">
-                    </div>
-                    <div class="details">
-                        <h1>Slot Machine</h1>
-                        <div class="center">
-                            <p>
-                                One of Vegas's most popular gambling machines. This slot machine was built using C# and is 100% accurate.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://github.com/leedy15/Casino" class="btn btn-secondary">See Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div id="cardright" class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/Bewander.png" alt="Bewander">
-                    </div>
-                    <div class="details">
-                        <h1>Bewander</h1>
-                        <div class="center">
-                            <p>
-                                Part of my Live Project while finishing my studies at The Tech Academy, Bewander is a social media site for travelers.
-                                In a scrum team setting, my focus was fixing front-end bugs. 
-                                Follow the link below to see my contributions to this wonderful site.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://github.com/leedy15/BewanderContribution" class="btn btn-secondary">See Changes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div id="cardbottom" class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/cryptovault.png" alt="CryptoVault">
-                    </div>
-                    <div class="details">
-                        <h1>CryptoVault</h1>
-                        <div class="center">
-                            <p>
-                                I joined a team to develop a Crypto Currency Wallet and Cryptovault was the outcome.
-                                Fixing many front-end problems was my main roll for the short time I was able to contribute to this project.
-                                Follow the link below to see my contributions to this wonderful site.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://github.com/leedy15/CryptoVaultContribution" class="btn btn-secondary">See Changes</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div id="cardleft" class="card">
-                    <div class="image">
-                        <img class="card-img-top" src="img/TTA.png" alt="TTA/LMS">
-                    </div>
-                    <div class="details">
-                        <h1>TTA/LMS</h1>
-                        <div class="center">
-                            <p>
-                                While acting as an Instructor at The Tech Academy, I was appointed to the task of working on the website and Learning Managment System for the school.
-                                My contributions to the site included small front-end changes to the main site but many additons to the LMS. 
-                                Using React.js I added more functionality to the students by simplifing how the learning material was quizzed and presented.
-                            </p>
-                            <h2>&nbsp;</h2>
-                            <a target="_blank" href="https://www.learncodinganywhere.com/LMS#/" class="btn btn-secondary">See Site</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Projects -->
-    </main>
-
-    <div class="scroll-to-next  col-xs-12">
         <a type="button" href="#spacestudies" class="arrow bounce">
             <div class="scroll-text">Click Me</div>
             <i class="fas fa-angle-down fa-2x"></i>
@@ -426,7 +249,7 @@
                     </div>
                     <div class="details">
                         <h1>The Tech Academy</h1>
-                        <h2>September 2017 - January 2018</h2> 
+                        <h2>September 2017 - January 2018</h2>
                         <div class="center">
                             <p>
                                 Choosing to go to The Tech Academy was the best decision I could have ever made for my career.
@@ -466,23 +289,21 @@
     <!--Scroll Reveal-->
     <script src="JS/AboutScrollReveal.js "></script>
 
-    <script>
-        $(window).scroll(function() {
-                var height = $(window).scrollTop();
-                if (height > 500) {
-                    $('#back2Top').fadeIn();
-                } else {
-                    $('#back2Top').fadeOut();
-                }
-        });
-        $(document).ready(function() {
-                $("#back2Top").click(function(event) {
-                    event.preventDefault();
-                    $("html, body").animate({ scrollTop: 0 }, "slow");
-                    return false;
-                });
-        });
-</script>
+    <script>$(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if (height > 500) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
+});
+$(document).ready(function() {
+            $("#back2Top").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+});</script>
 
 </body>
 </html>
